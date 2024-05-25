@@ -20,5 +20,5 @@ exports.default = gulp.parallel (style, images);
 exports.watch = function() {
     gulp.watch('./src/styles/*.scss', {
         ignoreInitial: false
-    }, gulp.parallel(style, images));
+    }, gulp.parallel(style));
 }

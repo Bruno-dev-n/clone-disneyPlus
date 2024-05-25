@@ -1,0 +1,40 @@
+@import'variaves';
+.shows{
+    padding: 2vw 5.6vw;
+    min-height: 50vw;
+    &__list{
+        display: none;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+        &--is-active{
+            display: grid;
+        }
+        &__itens{
+            img{
+                max-width: 100%;
+                border-radius: 4px;
+            }
+        }
+    }
+    &__tabs{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-bottom: 44px;
+
+        &__button{
+            background: none;
+            border: none;
+            border-bottom:4px solid transparent;
+            color: $cortitulo;
+            text-transform: uppercase;
+            margin-left: 1vw;
+            font-size: 24px;
+
+            &--is-active{
+                border-bottom:4px solid $cortitulo;
+            }
+        }
+    }
+}

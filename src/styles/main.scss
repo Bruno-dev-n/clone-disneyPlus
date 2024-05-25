@@ -1,5 +1,7 @@
 @import 'variaves';
 @import 'hero';
+@import'shows';
+@import'plans';
 @font-face {
     font-family: avenir;
     src: url(../../assets/fonts/Avenir-Regular.woff2);
@@ -10,9 +12,14 @@
     src: url(../../assets/fonts/Avenir-Bold.woff2);
     font-weight: 700;
 }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: avenir, sans-serif;
+}
 body{
     background-color: $bgcolor;
-    font-family: avenir, sans-serif;
 
 }
 @mixin text($fontSize:16px){
@@ -33,7 +40,7 @@ body{
     color:$corparagra;
 }
 .text--big{
-    @include text(18px);
+    @include text(24px);
     color: $cortitulo;
 }
 .title--big{
@@ -46,4 +53,10 @@ body{
     @include text (18px);
     color: $cortitulo;
     text-decoration: underline;
+}
+p{
+    margin-top: 28px;
+    &__:last-child{
+        margin-top: 64px;
+    }
 }

@@ -1,0 +1,40 @@
+.plans{
+    padding: 2vw 5.6vw;
+    text-align: center;
+    &__list{
+        margin: 0 auto;
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-around;
+        &__item{
+            padding: 60px 44px 44px;
+            max-width: 380px;
+            width: 100%;
+            &:nth-child(2){
+                background-image: url(../images/fundo_combo_plus.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            p{
+                margin-top: 24px;
+            }
+            img{
+                height: 83px;
+                margin: auto;
+            }
+            &__link--botao{
+                display: block;
+                margin: 0 auto;
+                margin-top: 20px;
+                padding: 20.33px 33px;
+                background-color:$corbotao;
+                text-transform: uppercase;
+                border-radius: 4px;
+                text-decoration: none;
+                color: $cortitulo;
+                text-align: center;
+                font-size: 19px;
+            }
+        }
+    }
+    }
